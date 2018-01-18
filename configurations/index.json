@@ -1,0 +1,10 @@
+{
+	"api_path_development":"https://cbs.wappsystem.com/dev/",
+	"api_path_production":"https://rt.woolcock.org.au/",
+	"default_production":"Yes",
+	"panels":{
+		"website":	{"url":"","modules":["modules/website/module.json"]},
+		"quest-panel":	{"url":"modules/panel/quest.html","modules":["modules/edc/module.json"]}
+	},
+	"participant-login-setup-table-id":"20011368"
+}
