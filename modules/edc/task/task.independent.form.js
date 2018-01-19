@@ -15,7 +15,7 @@ $('#F__ID').submit(function(event){
 	if($vm.vm['__ID'].op.input.participant_uid!==undefined) data.Participant_uid=$vm.vm['__ID'].op.input.participant_uid;
 	var dbv={}
 	set_status_and_participant(data,dbv)
-	var r=true;	if(_before_submit_form!='') r=_before_submit(data,dbv);
+	var r=true;	if(_before_submit!='') r=_before_submit(data,dbv);
 	if(r==true){
 	    //--------------------------------------------------------
 		var req={cmd:"add_json_record_s2",db_pid:db_pid,data:data,dbv:dbv};

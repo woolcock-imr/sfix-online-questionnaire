@@ -57,20 +57,6 @@
 				var task_name=get_task_name(pid.toString());
 				var module=get_module_id(pid.toString());
 				txt+="<li id="+pid+" module="+module+">"+task_name+"</li>";
-				/*
-				for(module in $vm.module_list){
-		            var nnn=$vm.module_list[module];
-		            if(nnn.table_id!==undefined){
-		                var module_pid=nnn.table_id;
-		                if(pid==module_pid){
-							if(nnn.task!==undefined){
-		                    	txt+="<li id="+pid+" module="+module+">"+nnn.task+"</li>";
-		                	}
-							else console.log("The module "+module+" does not have a task name for list on the panel!")
-						}
-		            }
-		        }
-				*/
 		    }
 		    $('#items__ID').html(txt);
 		    //----------------------------------
@@ -107,7 +93,8 @@
 		                var module=$(this).attr('module');
 						if($vm.module_list[module].form_module!=undefined){
 							//grid-form
-							$vm.load_module_by_name(module,undefined,{"participant_uid":$vm.g_participant_uid,"participant_name":$vm.g_participant});
+							//$vm.load_module_by_name(module,undefined,{"participant_uid":$vm.g_participant_uid,"participant_name":$vm.g_participant});
+							$vm.nav_load_module(module,"hidden",{"participant_uid":$vm.g_participant_uid,"participant_name":$vm.g_participant});
 						}
 						else{
 							//independent form
