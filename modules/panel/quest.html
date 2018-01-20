@@ -27,7 +27,7 @@
 			for(visit in q_list){
 				var sublist=q_list[visit];
                 for(i in sublist){
-					if(pid==sublist[i].table_id){
+					if(pid==sublist[i].table_id /*&& sublist[i].task_name.indexOf(prefix)!=-1*/){
 						return sublist[i].task_name;
 					}
 				}
@@ -37,7 +37,7 @@
 		//---------------------------------
 		var get_module_id=function(pid){
 			for(module in $vm.module_list){
-				if(pid==$vm.module_list[module].table_id){
+				if(pid==$vm.module_list[module].table_id && module.indexOf(prefix)!=-1){
 					return module;
 				}
 			}
@@ -91,6 +91,7 @@
 		            $li.html("<u style='cursor:pointer' module="+module+">"+task_name+"</u>");
 		            $li.find('u').on('click',function(){
 		                var module=$(this).attr('module');
+                        //the module allready contains the prefix
 						if($vm.module_list[module].form_module!=undefined){
 							//grid-form
 							//$vm.load_module_by_name(module,undefined,{"participant_uid":$vm.g_participant_uid,"participant_name":$vm.g_participant});

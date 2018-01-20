@@ -36,8 +36,7 @@
             var participant_uid=a[0];
             var setup_pid=a[1];
 			//------------------------------------
-			//$vm.g_participant_pid='20011117';
-			$vm.g_participant_pid=$vm.app_config["participant-login-setup-table-id"];
+			$vm.g_participant_pid="20011368";
 			$vm.g_participant_uid=participant_uid;
 			$vm.g_participant=participant_uid;
 			$vm.g_setup_pid=setup_pid;
@@ -51,7 +50,7 @@
                     $VmAPI.set_token(res.token,'');
                     if(res.S1!=undefined) $vm.g_participant=res.S1;
 					$vm.g_task_list=res.List;
-					$vm.nav_load_module("quest-panel");
+					$vm.nav_load_module("sfix-quest-panel");
                 }
                 else{
                     $('#ErrMsg__ID').text("Invalid participant login ID or password.")
