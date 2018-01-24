@@ -12,7 +12,17 @@
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         //-------------------------------------
         $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
-        $('#D__ID').on('back',function(){  _set_req(); _request_data(); })
+        $('#D__ID').on('show',function(){  _set_req(); _request_data(); })
+        //-------------------------------------
+        _cell_render=function(records,I,field,td,set_value,source){
+            switch(field){
+                case 'ISI_1':
+                case 'ISI':
+                    records[I].vm_readonly[field]=true;
+                break;
+            }
+            _default_cell_render(records,I,field,td,set_value,source);
+        }
         //-------------------------------------
         _before_submit=function(record,dbv){
             record.ISI=(parseInt(record.ISI_2)+parseInt(record.ISI_3)+parseInt(record.ISI_4)+parseInt(record.ISI_5)+parseInt(record.ISI_1a)+parseInt(record.ISI_1b)+parseInt(record.ISI_1c)).toString();

@@ -682,9 +682,6 @@
                 </div>
             </div>
             <hr style='border-top:1px solid #000;'></hr>
-            <input type="text"  name="DASS_DS" id=DASS_DS__ID style='display:none'/>
-            <input type="text"  name="DASS_AS" id=DASS_AS__ID style='display:none'/>
-            <input type="text"  name="DASS_SS" id=DASS_SS__ID style='display:none'/>
 			<br>
     		<button id=submit__ID type="submit" class="btn btn-secondary">Submit</button>
     	</div>
@@ -692,8 +689,13 @@
 </section>
 <script>
 function F__ID(){
-    VmInclude:__CURRENT_PATH__/task.js
-    _before_submit_form=function(){}
+    VmInclude:__CURRENT_PATH__/task.independent.form.js
+    _before_submit=function(record,dbv){
+        record.DASS_DS=((parseInt(record.DASS_3)+parseInt(record.DASS_5)+parseInt(record.DASS_10)+parseInt(record.DASS_13)+parseInt(record.DASS_16)+parseInt(record.DASS_17)+parseInt(record.DASS_21))*2).toString();
+        record.DASS_AS=((parseInt(record.DASS_2)+parseInt(record.DASS_4)+parseInt(record.DASS_7)+parseInt(record.DASS_9)+parseInt(record.DASS_15)+parseInt(record.DASS_19)+parseInt(record.DASS_20))*2).toString();
+        record.DASS_SS=((parseInt(record.DASS_1)+parseInt(record.DASS_6)+parseInt(record.DASS_8)+parseInt(record.DASS_11)+parseInt(record.DASS_12)+parseInt(record.DASS_14)+parseInt(record.DASS_18))*2).toString();
+        return true
+    }
 }
 </script>
 <style>

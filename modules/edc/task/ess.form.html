@@ -1,182 +1,343 @@
-<section>
-    VmInclude:__BASE__/vmiis/Common-Code/toolbar/back_save.html
+<section id=form_container__ID>
+    <div id=header__ID>
+		Epworth Sleepiness Scale
+	</div>
 	<form id=F__ID>
-        <table id=tb__ID style='width:770px;margin-left:100px;margin-top:50px;'>
-            <colgroup><col style='width:450px' />
-                <col style='width:80px;text-align:center!important' />
-                <col style='width:80px' />
-                <col style='width:80px' />
-                <col style='width:80px' />
-            </colgroup>
-
-            <tr><td colspan=5 class='header__ID'>ESS</td></tr>
-
-            <tr id=tr_participant__ID style='display:none'><td colspan=5 data-id=Participant data-custom=1>
-                <input name=Participant  id=Participant__ID  type=text class=sel__ID placeholder='select a partcipant...'/>
-                <input name=Participant_uid id=Participant_uid__ID type=text readonly style="width:50px;color:#ccc;" />
-                <u style='cursor:pointer;float:right;' id=Participant_r__ID>Remove</u>
-            </td></tr>
-
-            <tr><td colspan=5 ><br><b><i>How likely are you to doze or fall asleep in the following situations, in contrast to just feeling tired? This refers to your usual way of life in recent times. Even if you have not done some of these things recently, try to work out how they would have affected you.
-            </i></b><br><br>
-            </td></tr>
-
-            <tr><td></td><td class=C__ID___answ>Would<br><b>never</b><br>doze</td><td class=C__ID___answ><b>Slight</b><br>chance<br>of dozing</td><td class=C__ID___answ><b>Moderate</b><br> chance<br> of dozing</td><td class=C__ID___answ><b>High</b><br> chance<br> of dozing</td></tr>
-            <tr><td data-id=ESS_1 data-custom=1>1. Sitting and reading</td><td><input class=modified_radio__ID type=radio value=0 name=ESS_1  /></td><td><input class=modified_radio__ID type=radio value=1 name=ESS_1   /></td><td><input class=modified_radio__ID type=radio value=2 name=ESS_1   /></td><td><input class=modified_radio__ID type=radio value=3 name=ESS_1   /></td></tr>
-            <tr><td data-id=ESS_2 data-custom=1>2. Watching TV</td><td><input class=modified_radio__ID type=radio value=0 name=ESS_2   /></td><td><input class=modified_radio__ID type=radio value=1 name=ESS_2   /></td><td><input class=modified_radio__ID type=radio value=2 name=ESS_2   /></td><td><input class=modified_radio__ID type=radio value=3 name=ESS_2   /></td></tr>
-            <tr><td data-id=ESS_3 data-custom=1>3. Sitting, inactive in a public place (eg a theatre or a meeting)</td><td><input class=modified_radio__ID type=radio value=0 name=ESS_3   /></td><td><input class=modified_radio__ID type=radio value=1 name=ESS_3   /></td><td><input class=modified_radio__ID type=radio value=2 name=ESS_3   /></td><td><input class=modified_radio__ID type=radio value=3 name=ESS_3   /></td></tr>
-            <tr><td data-id=ESS_4 data-custom=1>4. As a passenger in a car for an hour without a break</td><td><input class=modified_radio__ID type=radio value=0 name=ESS_4 /></td><td><input class=modified_radio__ID type=radio value=1 name=ESS_4   /></td><td><input class=modified_radio__ID type=radio value=2 name=ESS_4   /></td><td><input class=modified_radio__ID type=radio value=3 name=ESS_4   /></td></tr>
-            <tr><td data-id=ESS_5 data-custom=1>5. Lying down to rest in the afternoon when circumstances permit</td><td><input class=modified_radio__ID type=radio value=0 name=ESS_5 /></td><td><input class=modified_radio__ID type=radio value=1 name=ESS_5   /></td><td><input class=modified_radio__ID type=radio value=2 name=ESS_5   /></td><td><input class=modified_radio__ID type=radio value=3 name=ESS_5   /></td></tr>
-            <tr><td data-id=ESS_6 data-custom=1>6. Sitting and talking to someone</td><td><input class=modified_radio__ID type=radio value=0 name=ESS_6 /></td><td><input class=modified_radio__ID type=radio value=1 name=ESS_6   /></td><td><input class=modified_radio__ID type=radio value=2 name=ESS_6   /></td><td><input class=modified_radio__ID type=radio value=3 name=ESS_6   /></td></tr>
-            <tr><td data-id=ESS_7 data-custom=1>7. Sitting quietly after lunch without alcohol</td><td><input class=modified_radio__ID type=radio value=0 name=ESS_7 /></td><td><input class=modified_radio__ID type=radio value=1 name=ESS_7   /></td><td><input class=modified_radio__ID type=radio value=2 name=ESS_7   /></td><td><input class=modified_radio__ID type=radio value=3 name=ESS_7   /></td></tr>
-            <tr><td data-id=ESS_8 data-custom=1>8. In a car, while stopped for a few minutes in traffic</td><td><input class=modified_radio__ID type=radio value=0 name=ESS_8  /></td><td><input class=modified_radio__ID type=radio value=1 name=ESS_8   /></td><td><input class=modified_radio__ID type=radio value=2 name=ESS_8   /></td><td><input class=modified_radio__ID type=radio value=3 name=ESS_8   /></td></tr>
-        </table>
-        <br>&nbsp;<a id=save2__ID class=save_and_back__ID style='margin-left:100px;' >Save &amp; Back</a>
+        <div class="container">
+            	How likely are you to doze or fall asleep in the following situations, in contrast to just feeling tired? This refers to your usual way of life in recent times. Even if you have not done some of these things recently, try to work out how they would have affected you.<br><br>
+                <hr style='border-top:1px solid #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group">
+                    <span id=quest__ID>1. Sitting and reading</span>
+                </div>
+                <div class="col-sm control-group">
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_1" id=ESS_1__ID required value=0 />
+                        <div class="control_indicator text-center">0</div>Would <b>never</b> doze
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_1" id=ESS_1__ID value=1 />
+                        <div class="control_indicator text-center">1</div><b>Slight</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_1" id=ESS_1__ID value=2 />
+                        <div class="control_indicator text-center">2</div><b>Moderate</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_1" id=ESS_1__ID value=3 />
+                        <div class="control_indicator text-center">3</div><b>High</b> chance of dozing
+                    </label>
+                </div>
+            </div>
+            <hr style='border-top:1px solid #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group">
+                    <span id=quest__ID>2. Watching TV</span>
+                </div>
+                <div class="col-sm control-group">
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_2" id=ESS_2__ID required value=0 />
+                        <div class="control_indicator text-center">0</div>Would <b>never</b> doze
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_2" id=ESS_2__ID value=1 />
+                        <div class="control_indicator text-center">1</div><b>Slight</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_2" id=ESS_2__ID value=2 />
+                        <div class="control_indicator text-center">2</div><b>Moderate</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_2" id=ESS_2__ID value=3 />
+                        <div class="control_indicator text-center">3</div><b>High</b> chance of dozing
+                    </label>
+                </div>
+            </div>
+            <hr style='border-top:1px solid #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group">
+                    <span id=quest__ID>3. Sitting, inactive in a public place (eg a theatre or a meeting)</span>
+                </div>
+                <div class="col-sm control-group">
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_3" id=ESS_3__ID required value=0 />
+                        <div class="control_indicator text-center">0</div>Would <b>never</b> doze
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_3" id=ESS_3__ID value=1 />
+                        <div class="control_indicator text-center">1</div><b>Slight</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_3" id=ESS_3__ID value=2 />
+                        <div class="control_indicator text-center">2</div><b>Moderate</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_3" id=ESS_3__ID value=3 />
+                        <div class="control_indicator text-center">3</div><b>High</b> chance of dozing
+                    </label>
+                </div>
+            </div>
+            <hr style='border-top:1px solid #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group">
+                    <span id=quest__ID>4. As a passenger in a car for an hour without a break</span>
+                </div>
+                <div class="col-sm control-group">
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_4" id=ESS_4__ID required value=0 />
+                        <div class="control_indicator text-center">0</div>Would <b>never</b> doze
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_4" id=ESS_4__ID value=1 />
+                        <div class="control_indicator text-center">1</div><b>Slight</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_4" id=ESS_4__ID value=2 />
+                        <div class="control_indicator text-center">2</div><b>Moderate</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_4" id=ESS_4__ID value=3 />
+                        <div class="control_indicator text-center">3</div><b>High</b> chance of dozing
+                    </label>
+                </div>
+            </div>
+            <hr style='border-top:1px solid #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group">
+                    <span id=quest__ID>5. Lying down to rest in the afternoon when circumstances permit</span>
+                </div>
+                <div class="col-sm control-group">
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_5" id=ESS_5__ID required value=0 />
+                        <div class="control_indicator text-center">0</div>Would <b>never</b> doze
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_5" id=ESS_5__ID value=1 />
+                        <div class="control_indicator text-center">1</div><b>Slight</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_5" id=ESS_5__ID value=2 />
+                        <div class="control_indicator text-center">2</div><b>Moderate</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_5" id=ESS_5__ID value=3 />
+                        <div class="control_indicator text-center">3</div><b>High</b> chance of dozing
+                    </label>
+                </div>
+            </div>
+            <hr style='border-top:1px solid #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group">
+                    <span id=quest__ID>6. Sitting and talking to someone</span>
+                </div>
+                <div class="col-sm control-group">
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_6" id=ESS_6__ID required value=0 />
+                        <div class="control_indicator text-center">0</div>Would <b>never</b> doze
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_6" id=ESS_6__ID value=1 />
+                        <div class="control_indicator text-center">1</div><b>Slight</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_6" id=ESS_6__ID value=2 />
+                        <div class="control_indicator text-center">2</div><b>Moderate</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_6" id=ESS_6__ID value=3 />
+                        <div class="control_indicator text-center">3</div><b>High</b> chance of dozing
+                    </label>
+                </div>
+            </div>
+            <hr style='border-top:1px solid #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group">
+                    <span id=quest__ID>7. Sitting quietly after lunch without alcohol</span>
+                </div>
+                <div class="col-sm control-group">
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_7" id=ESS_7__ID required value=0 />
+                        <div class="control_indicator text-center">0</div>Would <b>never</b> doze
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_7" id=ESS_7__ID value=1 />
+                        <div class="control_indicator text-center">1</div><b>Slight</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_7" id=ESS_7__ID value=2 />
+                        <div class="control_indicator text-center">2</div><b>Moderate</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_7" id=ESS_7__ID value=3 />
+                        <div class="control_indicator text-center">3</div><b>High</b> chance of dozing
+                    </label>
+                </div>
+            </div>
+            <hr style='border-top:1px solid #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group">
+                    <span id=quest__ID>8. In a car, while stopped for a few minutes in traffic</span>
+                </div>
+                <div class="col-sm control-group">
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_8" id=ESS_8__ID required value=0 />
+                        <div class="control_indicator text-center">0</div>Would <b>never</b> doze
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_8" id=ESS_8__ID value=1 />
+                        <div class="control_indicator text-center">1</div><b>Slight</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_8" id=ESS_8__ID value=2 />
+                        <div class="control_indicator text-center">2</div><b>Moderate</b> chance of dozing
+                    </label>
+                    <label class="control control-radio">
+                            <input type="radio"  name="ESS_8" id=ESS_8__ID value=3 />
+                        <div class="control_indicator text-center">3</div><b>High</b> chance of dozing
+                    </label>
+                </div>
+            </div>
+            <input type="text"  name="ESS" id=ESS__ID style='display:none'/>
+			<br>
+    		<button id=submit__ID type="submit" class="btn btn-secondary">Submit</button>
+    	</div>
     </form>
 </section>
 <script>
-    function F__ID(){
-        //----------------------------------
-        VmInclude:__BASE__/vmiis/Common-Code/grid/form.js
-        VmInclude:__BASE__/vmiis/Common-Code/clinical_trials/participant.js
-        
-        //----------------------------------
-        $('#D__ID').on('load',function(){
-            _init();
-            _field_process();
-            _task_fields=$vm.vm['__ID'].op.grid_to_form_parameters.task_fields;
-            _set_participant_field();
-            custom_field_process();
-        })
-        //----------------------------------
-        var custom_field_process=function(){
-            $('#tb__ID td[data-custom=1]').each(function(){
-                var field=$(this).attr('data-id');
-                switch(field){
-                    case "Participant":
-                        $(this).find("input[name='"+field+"']").val(_records[I].Participant);
-                        $(this).find("input[name='"+field+"_uid']").val(_records[I].Participant_uid);
-                    break;
-                    case "ESS_1":
-                    case "ESS_2":
-                    case "ESS_3":
-                    case "ESS_4":
-                    case "ESS_5":
-                    case "ESS_6":
-                    case "ESS_7":
-                    case "ESS_8":
-                        $('#tb__ID').find("input[name='"+field+"'][value='"+_records[I][field]+"']").prop('checked', true);
-                        $('#tb__ID').find("input[name='"+field+"']").on('click',function(){
-                            _set_value(this.value,_records,I,field);
-                        })
-                    break;
-                }
-            })
-        }
-        //----------------------------------
-        _before_submit_form=function(){
-            if( $('#tb__ID').find('input[name=ESS_1]:checked').val()===undefined){ $vm.alert("Please answer question 1"); return false; }
-            if( $('#tb__ID').find('input[name=ESS_2]:checked').val()===undefined){ $vm.alert("Please answer question 2"); return false; }
-            if( $('#tb__ID').find('input[name=ESS_3]:checked').val()===undefined){ $vm.alert("Please answer question 3"); return false; }
-            if( $('#tb__ID').find('input[name=ESS_4]:checked').val()===undefined){ $vm.alert("Please answer question 4"); return false; }
-            if( $('#tb__ID').find('input[name=ESS_5]:checked').val()===undefined){ $vm.alert("Please answer question 5"); return false; }
-            if( $('#tb__ID').find('input[name=ESS_6]:checked').val()===undefined){ $vm.alert("Please answer question 6"); return false; }
-            if( $('#tb__ID').find('input[name=ESS_7]:checked').val()===undefined){ $vm.alert("Please answer question 7"); return false; }
-            if( $('#tb__ID').find('input[name=ESS_8]:checked').val()===undefined){ $vm.alert("Please answer question 8"); return false; }
-            return true;
-        }
-        //----------------------------------
+function F__ID(){
+    VmInclude:__CURRENT_PATH__/task.independent.form.js
+    _before_submit=function(record,dbv){
+        record.ESS=(parseInt(record.ESS_1)+parseInt(record.ESS_2)+parseInt(record.ESS_3)+parseInt(record.ESS_4)+parseInt(record.ESS_5)+parseInt(record.ESS_6)+parseInt(record.ESS_7)+parseInt(record.ESS_8)).toString();
+        return true
     }
+}
 </script>
 <style>
-    VmInclude:__BASE__/vmiis/Common-Code/toolbar/toolbar.css
-    VmInclude:__BASE__/vmiis/Common-Code/grid/form.css
-    #tb__ID tr td:nth-child(2),
-    #tb__ID tr td:nth-child(3),
-    #tb__ID tr td:nth-child(4),
-    #tb__ID tr td:nth-child(5)
-    {
-        text-align: center;
-        padding-top: 5px;
-    }
-    input[type=text]{
+#D__ID{
+    height:100%;
+    overflow: auto;
+    animation: vm_module_fadein 1.0s;
+    background: rgba(151,164,181,0.95);
+}
+#form_container__ID{
+    padding-top:50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 
-    }
-    .modified_checkbox__ID {
-        -webkit-appearance: none;
-        -moz-appearance: checkbox;
-        background-color: #fafafa;
-        border: 1px solid #cacece;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-        padding: 9px;
-        border-radius: 3px;
-        display: inline-block;
-        position: relative;
-    }
-    .modified_checkbox__ID:active, .modified_checkbox__ID:checked:active {
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
-    }
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000;
+}
+#form_container__ID .row__ID{
+    padding:6px 0;
+}
+#form_container__ID .row__ID:hover{
+    /*background-color: #727b84;*/
+}
+#header__ID{
+    background-color:#727b84;
+    color:#000;
+    padding:10px 15px 10px 15px;
+    font-size:150%;
+}
+#quest__ID{
+    padding:5px 5px 5px 5px;
+    font-size:120%;
+}
+#F__ID{
+    border:1px solid #727b84;
+    padding:6px 15px 20px 15px;
+}
+#F__ID label
+    display: inline-block;
+    margin: .6rem 0 .3rem 0;
+}
 
-    .modified_checkbox__ID:checked {
-        -moz-appearance: checkbox;
-        background-color: #e9ecee;
-        border: 1px solid #adb8c0;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
-        color: #99a1a7;
+#F__ID fieldset {
+    border: 0px solid #c0c0c0;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width:768px){
+    #form_container__ID{
+        padding:20px 10px 50px 10px;
     }
-    .modified_checkbox__ID:checked:after {
-        content: '\2714';
-        font-size: 14px;
+}
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    .control input {
         position: absolute;
-        top: 0px;
-        left: 3px;
-        color: #99a1a7;
+        z-index: -1;
+        opacity: 0;
     }
-    .modified_radio__ID {
-        -webkit-appearance: none;
-        -moz-appearance: button;
-    /*	background-color: #fafafa;*/
-        border: 1px solid #000;
-        width:22px;
-        height:26px;
-    /*	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);*/
-        padding: 0px;
-        border-radius: 3px;
-        display: inline-block;
-        position: relative;
-        opacity:0.50;
-    }
-    .modified_radio__ID:active, .modified_radio__ID:checked:active {
-        /*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);*/
-    }
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+}
+.control-radio .control_indicator {
+    border-radius: 50%;
+}
 
-    .modified_radio__ID:checked {
-        -moz-appearance: button;
-        background-color: #888;
-        border: 1px solid #000;
-    /*	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);*/
-        color: #99a1a7;
-        opacity:0.9;
-    }
-    .modified_radio__ID:checked:after {
-        /*content: '\2714';*/
-        font-size: 14px;
-        position: absolute;
-        top: 0px;
-        left: 3px;
-        color: #99a1a7;
-    }
-    .modified_number__ID{
-        margin-left:-19px;
-        font-size:14pt;
-    }
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #cccccc;
+}
 
-    .modified_radio__ID:active, .modified_radio__ID:checked:active {
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
-    }
-    .modified_number__ID{
-        margin-left:-19px;
-        font-size:14pt;
-    }
-
+.control input:checked ~ .control_indicator {
+    background: #A51C3D;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #0e6647d;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-radio .control_indicator:after {
+    left: 7px;
+    top: 7px;
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+.control-radio input:disabled ~ .control_indicator:after {
+    background: #7b7b7b;
+}
 </style>
