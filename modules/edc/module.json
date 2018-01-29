@@ -4,10 +4,10 @@
 		"acta-b":	{"table_id":"20011369","url":"modules/edc/task/acta.html","form_module":"acta-b-form"},	"acta-b-form":  {"table_id":"20011369","url":"modules/edc/task/acta.form.html"},
 		"gses-b":   {"table_id":"20011370","url":"modules/edc/task/gses.html","form_module":"gses-b-form"},	"gses-b-form":  {"table_id":"20011370","url":"modules/edc/task/gses.form.html"},
 		"isi-s":    {"table_id":"20011371","url":"modules/edc/task/isi.html","form_module":"isi-s-form"},	"isi-s-form":   {"table_id":"20011371","url":"modules/edc/task/isi.form.html"},
-		"isi-b":    {"table_id":"20011372","url":"modules/edc/task/isi.html","form_module":"isi-b-form"},	"isi-b-form":   {"table_id":"20011372","url":"modules/edc/task/isi.form.html"},
-		"isi-1":    {"table_id":"20011373","url":"modules/edc/task/isi.html","form_module":"isi-1-form"},	"isi-1-form":   {"table_id":"20011373","url":"modules/edc/task/isi.form.html"},
-		"isi-2":    {"table_id":"20011374","url":"modules/edc/task/isi.html","form_module":"isi-2-form"},	"isi-2-form":   {"table_id":"20011374","url":"modules/edc/task/isi.form.html"},
-		"isi-3":    {"table_id":"20011375","url":"modules/edc/task/isi.html","form_module":"isi-3-form"},	"isi-3-form":   {"table_id":"20011375","url":"modules/edc/task/isi.form.html"},
+		"isi-b":    {"table_id":"20011372","url":"modules/edc/task/isi.html","form_module":"isi-b-form"},	"isi-b-form":   {"table_id":"20011372","url":"modules/edc/task/isi-w.form.html"},
+		"isi-1":    {"table_id":"20011373","url":"modules/edc/task/isi.html","form_module":"isi-1-form"},	"isi-1-form":   {"table_id":"20011373","url":"modules/edc/task/isi-w.form.html"},
+		"isi-2":    {"table_id":"20011374","url":"modules/edc/task/isi.html","form_module":"isi-2-form"},	"isi-2-form":   {"table_id":"20011374","url":"modules/edc/task/isi-w.form.html"},
+		"isi-3":    {"table_id":"20011375","url":"modules/edc/task/isi.html","form_module":"isi-3-form"},	"isi-3-form":   {"table_id":"20011375","url":"modules/edc/task/isi-w.form.html"},
 		"isi-6":    {"table_id":"20011376","url":"modules/edc/task/isi.html","form_module":"isi-6-form"},	"isi-6-form":   {"table_id":"20011376","url":"modules/edc/task/isi.form.html"},
 		"ess-b":    {"table_id":"20011377","url":"modules/edc/task/ess.html","form_module":"ess-b-form"},	"ess-b-form":   {"table_id":"20011377","url":"modules/edc/task/ess.form.html"},
 		"ess-1":    {"table_id":"20011378","url":"modules/edc/task/ess.html","form_module":"ess-1-form"},	"ess-1-form":   {"table_id":"20011378","url":"modules/edc/task/ess.form.html"},
@@ -30,7 +30,7 @@
 		"psqi-6":   {"table_id":"20011395","url":"modules/edc/task/psqi.html","form_module":"psqi-6-form"},"psqi-6-form":  {"table_id":"20011395","url":"modules/edc/task/psqi.form.html"},
 		"sf-12-b":  {"table_id":"20011396","url":"modules/edc/task/sf-12.html","form_module":"sf-12-b-form"},"sf-12-b-form":  {"table_id":"20011396","url":"modules/edc/task/sf-12.form.html"},
 		"sf-12-6":  {"table_id":"20011397","url":"modules/edc/task/sf-13.html","form_module":"sf-12-6-form"},"sf-12-6-form":  {"table_id":"20011397","url":"modules/edc/task/sf-12.form.html"},
-		"ieuq-6":   {"table_id":"20011398","url":"modules/edc/task/ieuq.html","form_module":"iueq-6-form"},"iueq-6-form":  {"table_id":"20011398","url":"modules/edc/task/iueq.form.html"},
+		"ieuq-6":   {"table_id":"20011398","url":"modules/edc/task/ieuq.html","form_module":"ieuq-6-form"},"ieuq-6-form":  {"table_id":"20011398","url":"modules/edc/task/ieuq.form.html"},
 		"iieq-6":   {"table_id":"20011399","url":"modules/edc/task/iieq.html","form_module":"iieq-6-form"},"iieq-6-form":  {"table_id":"20011399","url":"modules/edc/task/iieq.form.html"},
 
 		"quest_list":{
