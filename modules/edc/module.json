@@ -29,7 +29,7 @@
 		"psqi-b":   {"table_id":"20011394","url":"modules/edc/task/psqi.html","form_module":"psqi-b-form"},"psqi-b-form":  {"table_id":"20011394","url":"modules/edc/task/psqi.form.html"},
 		"psqi-6":   {"table_id":"20011395","url":"modules/edc/task/psqi.html","form_module":"psqi-6-form"},"psqi-6-form":  {"table_id":"20011395","url":"modules/edc/task/psqi.form.html"},
 		"sf-12-b":  {"table_id":"20011396","url":"modules/edc/task/sf-12.html","form_module":"sf-12-b-form"},"sf-12-b-form":  {"table_id":"20011396","url":"modules/edc/task/sf-12.form.html"},
-		"sf-12-6":  {"table_id":"20011397","url":"modules/edc/task/sf-13.html","form_module":"sf-12-6-form"},"sf-12-6-form":  {"table_id":"20011397","url":"modules/edc/task/sf-12.form.html"},
+		"sf-12-6":  {"table_id":"20011397","url":"modules/edc/task/sf-12.html","form_module":"sf-12-6-form"},"sf-12-6-form":  {"table_id":"20011397","url":"modules/edc/task/sf-12.form.html"},
 		"ieuq-6":   {"table_id":"20011398","url":"modules/edc/task/ieuq.html","form_module":"ieuq-6-form"},"ieuq-6-form":  {"table_id":"20011398","url":"modules/edc/task/ieuq.form.html"},
 		"iieq-6":   {"table_id":"20011399","url":"modules/edc/task/iieq.html","form_module":"iieq-6-form"},"iieq-6-form":  {"table_id":"20011399","url":"modules/edc/task/iieq.form.html"},
 
