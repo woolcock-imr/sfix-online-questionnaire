@@ -35,10 +35,6 @@
 
 		"quest_list":{
 			"list":{
-				"Screening":[
-					{"table_id":"20011371","task_name":"Screening - Insomnia Severity Index"},
-					{"table_id":"20011393","task_name":"Screening - Pittsburgh sleep quality index"}
-				],
 				"Baseline":[
 					{"table_id":"20011369","task_name":"Baseline - Autonomy and Competence in Technology Adoption Questionnaire"},
 					{"table_id":"20011370","task_name":"Baseline - General Self-Efficacy Scale"},
